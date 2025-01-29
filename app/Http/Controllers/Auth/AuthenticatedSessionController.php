@@ -24,11 +24,9 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request): RedirectResponse
     {
-
         $request->authenticate();
 
         $request->session()->regenerate();
-
 
         $url = '';
         if($request->user()->role == 'admin'){
@@ -40,7 +38,6 @@ class AuthenticatedSessionController extends Controller
             $url = '/dashboard';
         }
 
-      //  return redirect()->intended(route('dashboard', absolute: false));
         return redirect()->intended($url);
     }
 

@@ -31,7 +31,7 @@
                     <ul class="nav sub-menu">
                         <li class="nav-item">
 {{--                            <a href="{{ route('all.property') }}" class="nav-link">All Property</a>--}}
-                            <a href="#" class="nav-link">All Property</a>
+                            <a href="{{ route('all.type') }}" class="nav-link">All Type</a>
                         </li>
                         <li class="nav-item">
 {{--                            <a href="{{ route('add.property') }}" class="nav-link">Add Property</a>--}}
